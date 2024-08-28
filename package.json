@@ -7,8 +7,10 @@
     "pending"
   ],
   "scripts": {
-    "ci": "pnpm run build",
-    "format": "prettier --write ."
+    "build": "tsc",
+    "ci": "pnpm run build && pnpm run check-format",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "homepage": "https://github.com/David-Pena/aliases-inv",
   "bugs": {
