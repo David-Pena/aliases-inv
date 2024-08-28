@@ -1,0 +1,32 @@
+{
+  "name": "aliases-inv",
+  "version": "0.1.0",
+  "description": "A inv tool to manage your bash aliases",
+  "keywords": [
+    "demo",
+    "pending"
+  ],
+  "scripts": {
+    "ci": "pnpm run build",
+    "format": "prettier --write ."
+  },
+  "homepage": "https://github.com/David-Pena/aliases-inv",
+  "bugs": {
+    "url": "https://github.com/David-Pena/aliases-inv/issues"
+  },
+  "author": "Unans___ <dev.davidpe@gmail.com> (https://davidpena.dev)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David-Pena/aliases-inv.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}
