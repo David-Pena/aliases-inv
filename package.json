@@ -1,6 +1,6 @@
 {
   "name": "aliases-inv",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A inv tool to manage your bash aliases",
   "keywords": [
     "demo",
