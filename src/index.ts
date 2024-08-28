@@ -1,1 +1,1 @@
-export { add } from './utils.ts';
+export { add } from './utils';

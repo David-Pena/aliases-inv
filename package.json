@@ -6,11 +6,16 @@
     "demo",
     "pending"
   ],
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "ci": "pnpm run build && pnpm run check-format",
+    "build": "tsup",
+    "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports && pnpm run lint pnpm run test",
     "format": "prettier --write .",
-    "check-format": "prettier --check ."
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack .",
+    "lint": "tsc",
+    "test": "vitest run",
+    "dev": "vitest"
   },
   "homepage": "https://github.com/David-Pena/aliases-inv",
   "bugs": {
@@ -28,7 +33,17 @@
   "license": "MIT",
   "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.4",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.4"
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
   }
 }
